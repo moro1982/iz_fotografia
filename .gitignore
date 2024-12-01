@@ -3,4 +3,4 @@ src
 vendor
 includes/.env
 /.htaccess
-/public/.httaccess
+/public/.htaccess
