@@ -3,7 +3,7 @@
         $galeriaId = 'galeria0' . $i;
 ?>
       <!-- GALLERY i -->
-      <div class="galeria pt-3 p-lg-5">
+      <div class="galeria pt-3 p-lg-4">
         <!-- CAROUSSEL -->
         <div id="<?php echo $galeriaId; ?>" class="carousel slide">
           <!-- Indicadores -->
