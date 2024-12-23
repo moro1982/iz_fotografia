@@ -21,14 +21,14 @@
             $router->render('paginas/bodas_fiestas', [
                 'esHome' => false,
                 'titulo' => 'Fiestas de Bodas',
-                'nroGalerias' => 5
+                'subsecciones' => null
             ]);
         }
         public static function bodasPreBodas(Router $router) {
             $router->render('paginas/bodas_pre-bodas', [
                 'esHome' => false,
                 'titulo' => 'Pre-Bodas',
-                'nroGalerias' => 2
+                'subsecciones' => ['Sesiones', 'Reels para Redes Sociales']
             ]);
         }
         public static function quinceBooks(Router $router) {
@@ -63,6 +63,13 @@
             $router->render('paginas/social_infantil', [
                 'esHome' => false,
                 'titulo' => 'Infantil',
+                'nroGalerias' => 4
+            ]);
+        }
+        public static function socialInstitucional(Router $router) {
+            $router->render('paginas/social_institucional', [
+                'esHome' => false,
+                'titulo' => 'Institucionales - Corporativos',
                 'nroGalerias' => 4
             ]);
         }

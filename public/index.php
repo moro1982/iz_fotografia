@@ -14,6 +14,7 @@
   $router->get('/social_bautismos', [PaginasController::class, 'socialBautismos']);
   $router->get('/social_comuniones', [PaginasController::class, 'socialComuniones']);
   $router->get('/social_infantil', [PaginasController::class, 'socialInfantil']);
+  $router->get('/social_institucional', [PaginasController::class, 'socialInstitucional']);
   $router->get('/contacto', [PaginasController::class, 'contacto']);
   $router->post('/contacto', [PaginasController::class, 'contacto']);
   
