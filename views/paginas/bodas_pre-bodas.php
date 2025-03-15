@@ -3,7 +3,7 @@
   <?php echo $subsecciones[0]; ?>
 </p>
 
-<div class="container ">
+<div class="container">
   <ul id="seccion00" class="thumbnails">
     <!-- Miniaturas generadas por JS -->
   </ul>
