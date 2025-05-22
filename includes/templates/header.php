@@ -88,6 +88,9 @@
                   <li>
                     <a id="social_infantil" class="dropdown-item" href="social_infantil.php"> Infantil </a>
                   </li>
+                  <li>
+                    <a id="social_institucional" class="dropdown-item" href="social_institucional.php"> Institucional </a>
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">

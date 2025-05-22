@@ -45,7 +45,7 @@ export async function imagenes(done) {
 }
 function procesarImagenes(file, outputSubDir) {
     if (!fs.existsSync(outputSubDir)) {
-        fs.mkdirSync(outputSubDir, { recursive: true })
+        fs.mkdirSync(outputSubDir, { recursive: true });
     }
     const baseName = path.basename(file, path.extname(file));
     const extName = path.extname(file);
