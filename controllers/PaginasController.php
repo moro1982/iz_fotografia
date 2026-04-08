@@ -17,60 +17,18 @@
                 'titulo' => 'Acerca de mí'
             ]);
         }
-        public static function bodasFiestas(Router $router) {
-            $router->render('paginas/bodas_fiestas', [
+        public static function bodas(Router $router) {
+            $router->render('paginas/bodas', [
                 'esHome' => false,
-                'titulo' => 'Fiestas de Bodas',
-                'subsecciones' => null
+                'titulo' => 'Bodas',
+                'subsecciones' => ['Estela & Ángel', 'Mica & Oscar']
             ]);
         }
-        public static function bodasPreBodas(Router $router) {
-            $router->render('paginas/bodas_pre-bodas', [
+        public static function quince(Router $router) {
+            $router->render('paginas/quince', [
                 'esHome' => false,
-                'titulo' => 'Pre-Bodas',
-                'subsecciones' => ['Sesiones', 'Reels para Redes Sociales']
-            ]);
-        }
-        public static function quinceBooks(Router $router) {
-            $router->render('paginas/quince_books', [
-                'esHome' => false,
-                'titulo' => 'Books de Quince',
-                'nroGalerias' => 4
-            ]);
-        }
-        public static function quinceFiestas(Router $router) {
-            $router->render('paginas/quince_fiestas', [
-                'esHome' => false,
-                'titulo' => 'Fiestas de Quince',
-                'nroGalerias' => 1
-            ]);
-        }
-        public static function socialBautismos(Router $router) {
-            $router->render('paginas/social_bautismos', [
-                'esHome' => false,
-                'titulo' => 'Bautismos',
-                'nroGalerias' => 1
-            ]);
-        }
-        public static function socialComuniones(Router $router) {
-            $router->render('paginas/social_comuniones', [
-                'esHome' => false,
-                'titulo' => 'Comuniones',
-                'nroGalerias' => 1
-            ]);
-        }
-        public static function socialInfantil(Router $router) {
-            $router->render('paginas/social_infantil', [
-                'esHome' => false,
-                'titulo' => 'Infantil',
-                'nroGalerias' => 4
-            ]);
-        }
-        public static function socialInstitucional(Router $router) {
-            $router->render('paginas/social_institucional', [
-                'esHome' => false,
-                'titulo' => 'Institucionales - Corporativos',
-                'nroGalerias' => 4
+                'titulo' => 'Quince',
+                'subsecciones' => ['Cami', 'Valen']
             ]);
         }
         

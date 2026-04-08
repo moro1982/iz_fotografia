@@ -4,3 +4,4 @@ vendor
 includes/.env
 /.htaccess
 public/.htaccess
+public/build/img

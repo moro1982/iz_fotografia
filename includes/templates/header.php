@@ -54,44 +54,11 @@
               <li class="nav-item">
                 <a id="nosotros" class="nav-link" href="nosotros.php"> Acerca de mí </a>
               </li>
-              <li class="nav-item dropdown">
-                <a id="bodas" class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false"> Bodas </a>
-                <ul class="dropdown-menu">
-                  <li> 
-                    <a id="bodas_pre-bodas" class="dropdown-item" href="bodas_pre-bodas.php"> Pre-Bodas </a> 
-                  </li>
-                  <li> 
-                    <a id="bodas_fiestas" class="dropdown-item" href="bodas_fiestas.php"> Fiestas </a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <a id="bodas" class="nav-link" href="bodas.php"> Bodas </a>
               </li>
-              <li class="nav-item dropdown">
-                <a id="quince" class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false"> Quince </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a id="quince_books" class="dropdown-item" href="quince_books.php"> Books </a>
-                  </li>
-                  <li>
-                    <a id="quince_fiestas" class="dropdown-item" href="quince_fiestas.php"> Fiestas </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a id="social" class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false"> Social </a>
-                <ul class="dropdown-menu">
-                  <li> 
-                    <a id="social_comuniones" class="dropdown-item" href="social_comuniones.php"> Comuniones </a>
-                  </li>
-                  <li> 
-                    <a id="social_bautismos" class="dropdown-item" href="social_bautismos.php"> Bautismos </a>
-                  </li>
-                  <li>
-                    <a id="social_infantil" class="dropdown-item" href="social_infantil.php"> Infantil </a>
-                  </li>
-                  <li>
-                    <a id="social_institucional" class="dropdown-item" href="social_institucional.php"> Institucional </a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <a id="quince" class="nav-link" href="quince.php"> Quince </a>
               </li>
               <li class="nav-item">
                 <a id="contacto" class="nav-link" href="contacto.php"> Contacto </a>
