@@ -1,0 +1,69 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.hero {
+    background: linear-gradient(v.$beige3, v.$beige2);
+    border: none;
+    display: flex;
+    align-items: center;
+        
+    .hero-img {
+        overflow: hidden;
+        object-fit: cover;
+        object-position: center;
+    }
+    .hero-overlay {
+        display: inline-block;
+        align-content: end;
+        text-shadow: 1px 1px 1px v.$gris1;
+        @include m.telefono() {
+            display: none;
+        }
+    }
+    h1 {
+        margin: 0;
+        font-size: medium;
+    }
+    h4, h5 {
+        font-size: small;
+        margin-top: .5rem;
+    }
+}
+
+.iconos {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    margin: 2rem 0;
+    @include m.tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    .icon {
+        justify-items: center;
+        svg {
+            margin: 0 0 .4rem 0;
+            fill: #281c18;
+        }
+        &:first-child {
+            svg {
+                margin: -2.5rem 0 -.75rem 0;
+            }
+        }
+        &:last-child {
+            svg {
+                margin-bottom: 1rem 0 10rem 0;
+            }
+            .icon-text {
+                margin-top: .5rem;
+            }
+        }
+        .icon-text {
+            margin-top: 1rem;
+            padding: 0 3rem;
+            text-align: justify;
+        }
+    }
+}

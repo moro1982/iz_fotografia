@@ -1,0 +1,71 @@
+@use './variables' as v;
+
+body {
+    font-family: v.$fuente-primaria;
+    background-color: v.$beige2;
+    background: linear-gradient(v.$beige2, v.$beige3);
+    min-height: 100vh;
+
+    &.fijar-body {
+        overflow: hidden;
+    }
+
+    &.body-scroll {
+        padding-top: 8.6rem;
+    }
+}
+
+h2 {
+    &.titulo {
+        margin-top: 2rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        color: v.$marron3;
+    }
+}
+
+.titulo {
+    color: v.$marron3;
+}
+.titulo-fondo {
+    padding-top: 1rem;
+    background: linear-gradient(v.$beige3, v.$beige2);
+}
+
+.enviar {
+    font-size: x-large;
+    color: v.$marron1;
+    margin-bottom: 2rem;
+    &:hover {
+        background-color: v.$marron1;
+    }
+}
+
+.separador {
+    color: v.$gris1;
+}
+
+.alerta {
+    padding: .5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: v.$blanco;
+    font-weight: v.$bold;
+    margin: 1rem 0;
+
+    &.exito {
+        background-color: v.$marron1;
+    }
+
+    &.error {
+        background-color: v.$marron3;
+    }
+
+    // &.oculto {
+    //     display: none;
+    // }
+}

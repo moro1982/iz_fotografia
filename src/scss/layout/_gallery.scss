@@ -1,0 +1,70 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.galeria {
+    width: 90%;
+    margin: 0 auto 2rem;
+    @include m.telefono {
+        width: 75%;
+    }
+    @include m.tablet {
+        width: 60%;
+    }
+    .galeria-hero {
+        width: 100%;
+    }
+}
+
+.thumbnails {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    @include m.telefono {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        justify-content: center;
+    }
+    @include m.tablet {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }    
+}
+
+.overlay {
+    position:fixed;
+    overflow-y: scroll;
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: rgb(0 0 0 / .5);
+}
+
+.btn-cerrar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: v.$beige3;
+    color: v.$marron3;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

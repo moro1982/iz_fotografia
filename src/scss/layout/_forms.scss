@@ -1,0 +1,90 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.formulario {
+    background: linear-gradient(v.$beige2, v.$beige3);
+    color: v.$marron1;
+    p {
+        font-size: 1.2rem;
+        margin: 2rem 0 0 0;
+    }
+    legend {
+        font-size: 1.5rem;
+    }
+    label {
+        font-weight: v.$medium;
+        text-transform: uppercase;
+        display: block;
+    }
+    input,
+    textarea,
+    select {
+        padding: 1rem;
+        display: block;
+        width: 100%;
+        background-color: v.$beige2;
+        border: 1px solid v.$negro1;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+    }
+    textarea {
+        height: 20rem;
+    }
+    #otro {
+        display: none;
+    }
+}
+
+.whatsapp-btn-container {
+    position: fixed;
+    bottom: -50px;
+    padding: .5rem;
+    opacity: 0;
+    animation: fade-up 1000ms forwards;
+    animation-delay: 1000ms;
+    right: 1.5rem;
+
+    .whatsapp-btn {
+        width: 2rem;
+        display: inline-block;
+        @include m.telefono {
+            width: 4rem;
+        }
+        
+        &:hover {
+            transform: scale(1.2);
+            transition: all 400ms;
+            fill: v.$marron2;
+            filter: drop-shadow(1px 1px 3px #888);
+
+            &+span {
+                transform: rotateZ(0deg) translateX(0px);
+                opacity: 1;
+            }
+        }
+    }
+
+    span {
+        position: absolute;
+        top: -.7rem;
+        left: -1.5rem;
+        color: v.$marron2;
+        font-size: small;
+        font-weight: bold;
+        transform: rotateZ(20deg) translateX(10px);
+        opacity: 0;
+        transition: all 400ms;
+        @include m.telefono {
+            font-size: medium;
+            top: -1.5rem;
+            left: -.7rem;
+        }
+    }
+}
+
+@keyframes fade-up {
+    100% {
+        bottom: .5rem;
+        opacity: 1;
+    }
+}

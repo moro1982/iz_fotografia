@@ -1,0 +1,28 @@
+@use '../base/variables' as v;
+
+.footer {
+    background: linear-gradient(v.$beige2, v.$beige3);
+    color: v.$marron2;
+    margin: 0 auto;
+    padding: 1rem 0 .5rem 0;
+    font-size: small;
+    font-weight: v.$medium;
+
+    .redes-sociales {
+        padding: .5rem 0 1rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        svg {
+            height: fit-content;
+            fill: v.$marron1;
+            &:hover {
+                transform: scale(1.2);
+                transition: all 400ms;
+                fill: v.$marron2;
+                filter: drop-shadow(1px 1px 1px v.$marron3);
+            }
+        }
+    }
+}
