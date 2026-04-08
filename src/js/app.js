@@ -30,6 +30,27 @@ function iniciarApp(url) {
             crearMiniaturas('seccion00', carpetas01, 1);
             crearMiniaturas('seccion01', carpetas02, 6);
             break;
+        case '/quince':
+            resaltarActual('quince');
+            carpetas01 = [
+                { ruta : 'quince/Cami', cantidad : 58 }
+            ];
+            carpetas02 = [
+                { ruta : 'quince/Valen/book', cantidad : 58 },
+                { ruta : 'quince/Valen/CentroCastilla/01_EntradaSalon', cantidad : 21 },
+                { ruta : 'quince/Valen/CentroCastilla/02_Sola', cantidad : 49 },
+                { ruta : 'quince/Valen/CentroCastilla/03_Detalles', cantidad : 20 },
+                { ruta : 'quince/Valen/CentroCastilla/04_Mesas', cantidad : 13 },
+                { ruta : 'quince/Valen/CentroCastilla/05_Glitter', cantidad : 43 },
+                { ruta : 'quince/Valen/CentroCastilla/06_TandaBaile', cantidad : 64 },
+                { ruta : 'quince/Valen/CentroCastilla/07_Torta', cantidad : 39 },
+                { ruta : 'quince/Valen/CentroCastilla/08_VideoMejorAmiga', cantidad : 34 },
+                { ruta : 'quince/Valen/CentroCastilla/09_CopoAzucar', cantidad : 15 },
+                { ruta : 'quince/Valen/CentroCastilla/10_Cotillon', cantidad : 71 }
+            ];
+            crearMiniaturas('seccion00', carpetas01, 1);
+            crearMiniaturas('seccion01', carpetas02, 11);
+            break;
         case '/contacto':
             resaltarActual('contacto');
             break;

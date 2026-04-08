@@ -19,6 +19,7 @@
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
     @include m.telefono {
@@ -28,10 +29,11 @@
         justify-content: center;
     }
     @include m.tablet {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
         justify-content: center;
-    }    
+    }
 }
 
 .overlay {
