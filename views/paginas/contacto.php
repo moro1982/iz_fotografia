@@ -25,7 +25,6 @@
       <option value="" disabled selected>-- Seleccione --</option>
       <option value="Boda"> Boda </option>
       <option value="Quince"> Quince </option>
-      <option value="Social"> Social </option>
       <option value="Otro"> Otro (especificar) </option>
     </select>
     <input type="text" placeholder="Describa brevemente el tipo de evento" id="otro" name="contacto[tipo]" />

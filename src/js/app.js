@@ -89,6 +89,7 @@ function abrirGaleria(carpetas, indiceGaleria) {
     contenedor.setAttribute('id', atributoID);
     contenedor.classList.add('carousel');
     contenedor.classList.add('slide');
+    contenedor.setAttribute('data-bs-interval', 'false');
 
     // <div class="carousel-indicators"></div>
     const indicadores = document.createElement('DIV');

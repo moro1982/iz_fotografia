@@ -4,9 +4,9 @@
 </p>
 
 <div class="container">
-  <ul id="seccion00" class="thumbnails">
+  <div id="seccion00" class="thumbnails">
     <!-- Miniaturas generadas por JS -->
-  </ul>
+  </div>
 </div>
 
 <p class="text-center fs-5 py-1 mt-5 mb-0"> 
@@ -15,7 +15,7 @@
 </p>
 
 <div class="container">
-  <ul id="seccion01" class="thumbnails">
+  <div id="seccion01" class="thumbnails">
     <!-- Miniaturas generadas por JS -->
-  </ul>
+  </div>
 </div>
