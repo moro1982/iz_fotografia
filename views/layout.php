@@ -59,6 +59,14 @@
               <li class="nav-item">
                 <a id="quince" class="nav-link" href="/quince"> Quince </a>
               </li>
+              <li class="nav-item dropdown">
+                <a id="social" class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false"> Social </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a id="social_institucional" class="dropdown-item" href="/social_institucional"> Institucional </a>
+                  </li>
+                </ul>
+              </li>
               <li class="nav-item">
                 <a id="contacto" class="nav-link" href="/contacto"> Contacto </a>
               </li>

@@ -51,6 +51,13 @@ function iniciarApp(url) {
             crearMiniaturas('seccion00', carpetas01, 1);
             crearMiniaturas('seccion01', carpetas02, 11);
             break;
+        case '/social_institucional':
+            resaltarActual('social', 'social_institucional');
+            carpetas01 = [ { ruta : 'institucional/colegio_traductores', cantidad : 21 } ];
+            carpetas02 = [ { ruta : 'institucional/hotel_ibis', cantidad : 161 } ];
+            crearMiniaturas('seccion00', carpetas01, 1);
+            crearMiniaturas('seccion01', carpetas02, 1);
+            break;
         case '/contacto':
             resaltarActual('contacto');
             break;

@@ -31,7 +31,13 @@
                 'subsecciones' => ['Cami', 'Valen']
             ]);
         }
-        
+        public static function socialInstitucional(Router $router) {
+            $router->render('paginas/social_institucional', [
+                'esHome' => false,
+                'titulo' => 'Institucionales - Corporativos',
+                'subsecciones' => ['Colegio de Traductores', 'Hotel Ibis']
+            ]);
+        }
         public static function contacto(Router $router) {
             $mensaje = null;
             if ($_SERVER['REQUEST_METHOD'] === 'POST') {

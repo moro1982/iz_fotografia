@@ -75,7 +75,6 @@ export default series(js, css, dev);
 /** Version antigua de Gulp **/
 
 /*
-
 const webp = require('gulp-webp');
 const cache = require('gulp-cache');
 const imagemin = require('gulp-imagemin');
@@ -127,5 +126,4 @@ const _imagenes = imagenes;
 export { _imagenes as imagenes };
 const _dev = parallel(imagenes, versionWebp, versionAvif, javascript, dev);
 export { _dev as dev };
-
 */

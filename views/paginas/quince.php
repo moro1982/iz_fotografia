@@ -4,7 +4,7 @@
 </p>
 
 <div class="container">
-  <div id="seccion00" class="thumbnails">
+  <div id="seccion00" class="thumbnails few">
     <!-- Miniaturas generadas por JS -->
   </div>
 </div>
@@ -15,7 +15,7 @@
 </p>
 
 <div class="container">
-  <div id="seccion01" class="thumbnails">
+  <div id="seccion01" class="thumbnails many">
     <!-- Miniaturas generadas por JS -->
   </div>
 </div>

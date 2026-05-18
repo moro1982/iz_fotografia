@@ -159,11 +159,6 @@ case '/social_infantil':
     ];
     crearMiniaturas('seccion00', carpetas, 4);
     break;
-case '/social_institucional':
-    resaltarActual('social', 'social_institucional');
-    carpetas = [ { ruta : 'social_institucional', cantidad : 8 } ];
-    crearMiniaturas('seccion00', carpetas, 1);
-    break;
 -->
 
 <!-- 
@@ -235,11 +230,5 @@ case '/social_institucional':
   //         'nroGalerias' => 4
   //     ]);
   // }
-  // public static function socialInstitucional(Router $router) {
-  //     $router->render('paginas/social_institucional', [
-  //         'esHome' => false,
-  //         'titulo' => 'Institucionales - Corporativos',
-  //         'nroGalerias' => 4
-  //     ]);
-  // }
+
 -->
