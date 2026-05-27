@@ -19,3 +19,14 @@
     <!-- Miniaturas generadas por JS -->
   </div>
 </div>
+
+<p class="text-center fs-5 py-1 mt-5 mb-0"> 
+  <!-- Pasamos nombre de la subseccion con PHP desde el Controlador -->
+  <?php echo $subsecciones[2]; ?>
+</p>
+
+<div class="container">
+  <div id="seccion02" class="thumbnails few">
+    <!-- Miniaturas generadas por JS -->
+  </div>
+</div>

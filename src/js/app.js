@@ -20,36 +20,41 @@ function iniciarApp(url) {
                 { ruta : 'bodas/EstelaAngel/01_Iglesia', cantidad : 111 }
             ];
             carpetas02 = [
-                { ruta : 'bodas/MicaOscar/01_Llegada', cantidad : 59 },
-                { ruta : 'bodas/MicaOscar/02_Civil', cantidad : 92 },
+                { ruta : 'bodas/MicaOscar/01_Llegada', cantidad : 58 },
+                { ruta : 'bodas/MicaOscar/02_Civil', cantidad : 81 },
                 { ruta : 'bodas/MicaOscar/03_Detalle', cantidad : 45 },
                 { ruta : 'bodas/MicaOscar/04_Juntos', cantidad : 45 },
-                { ruta : 'bodas/MicaOscar/05_Baile', cantidad : 343 },
-                { ruta : 'bodas/MicaOscar/06_Ramo', cantidad : 19 }
+                { ruta : 'bodas/MicaOscar/05_Baile', cantidad : 210 },
+                { ruta : 'bodas/MicaOscar/06_Ramo', cantidad : 18 }
+            ];
+            carpetas03 = [
+                { ruta : 'bodas/AriTomy/01_Civil', cantidad : 50 },
+                { ruta : 'bodas/AriTomy/02_Hotel', cantidad : 59 }
             ];
             crearMiniaturas('seccion00', carpetas01, 1);
             crearMiniaturas('seccion01', carpetas02, 6);
+            crearMiniaturas('seccion02', carpetas03, 2);
             break;
         case '/quince':
             resaltarActual('quince');
             carpetas01 = [
-                { ruta : 'quince/Cami', cantidad : 58 }
+                { ruta : 'quince/Cami/salonStylo/01_Highlights', cantidad : 52 },
+                { ruta : 'quince/Cami/salonStylo/02_Sola', cantidad : 5 },
+                { ruta : 'quince/Cami/salonStylo/03_Detalles', cantidad : 19 },
+                { ruta : 'quince/Cami/salonStylo/04_TandaBaile', cantidad : 23 }
             ];
             carpetas02 = [
-                { ruta : 'quince/Valen/book', cantidad : 58 },
-                { ruta : 'quince/Valen/CentroCastilla/01_EntradaSalon', cantidad : 21 },
+                { ruta : 'quince/Valen/book', cantidad : 57 },
+                { ruta : 'quince/Valen/CentroCastilla/01_EntradaSalon', cantidad : 20 },
                 { ruta : 'quince/Valen/CentroCastilla/02_Sola', cantidad : 49 },
-                { ruta : 'quince/Valen/CentroCastilla/03_Detalles', cantidad : 20 },
-                { ruta : 'quince/Valen/CentroCastilla/04_Mesas', cantidad : 13 },
-                { ruta : 'quince/Valen/CentroCastilla/05_Glitter', cantidad : 43 },
-                { ruta : 'quince/Valen/CentroCastilla/06_TandaBaile', cantidad : 64 },
-                { ruta : 'quince/Valen/CentroCastilla/07_Torta', cantidad : 39 },
-                { ruta : 'quince/Valen/CentroCastilla/08_VideoMejorAmiga', cantidad : 34 },
-                { ruta : 'quince/Valen/CentroCastilla/09_CopoAzucar', cantidad : 15 },
-                { ruta : 'quince/Valen/CentroCastilla/10_Cotillon', cantidad : 71 }
+                { ruta : 'quince/Valen/CentroCastilla/03_Detalles', cantidad : 11 },
+                { ruta : 'quince/Valen/CentroCastilla/04_Glitter', cantidad : 32 },
+                { ruta : 'quince/Valen/CentroCastilla/05_Torta', cantidad : 15 },
+                { ruta : 'quince/Valen/CentroCastilla/06_VideoMejorAmiga', cantidad : 34 },
+                { ruta : 'quince/Valen/CentroCastilla/07_Cotillon', cantidad : 35 }
             ];
-            crearMiniaturas('seccion00', carpetas01, 1);
-            crearMiniaturas('seccion01', carpetas02, 11);
+            crearMiniaturas('seccion00', carpetas01, 4);
+            crearMiniaturas('seccion01', carpetas02, 7);
             break;
         case '/social_institucional':
             resaltarActual('social', 'social_institucional');

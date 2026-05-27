@@ -21,7 +21,11 @@
             $router->render('paginas/bodas', [
                 'esHome' => false,
                 'titulo' => 'Bodas',
-                'subsecciones' => ['Estela & Ángel', 'Mica & Oscar']
+                'subsecciones' => [
+                    'Estela & Ángel',
+                    'Mica & Oscar',
+                    'Ari & Tomy'
+                ]
             ]);
         }
         public static function quince(Router $router) {

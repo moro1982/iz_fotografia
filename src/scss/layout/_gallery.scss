@@ -16,34 +16,39 @@
 }
 
 .thumbnails {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
     &.many {
-        margin: 2rem 0;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        justify-items: center;
         justify-content: center;
-        align-items: center;
-        gap: 2rem;
         @include m.telefono {
-            display: grid;
             grid-template-columns: repeat(3, 1fr);
-            justify-items: center;
-            justify-content: center;
         }
         @include m.tablet {
-            display: grid;
             grid-template-columns: repeat(5, 1fr);
-            justify-items: center;
-            justify-content: center;
         }
     }
 
     &.few {
-        margin: 2rem 0;
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        justify-items: center;
         justify-content: center;
-        align-items: center;
-        gap: 2rem;
+        @include m.telefono {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include m.tablet {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
     }
 }
 
