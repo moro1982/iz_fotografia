@@ -64,7 +64,6 @@
                 $phpmailer->Subject = 'Tenes un nuevo mensaje!';
                 $phpmailer->isHTML(true);
                 
-            
                 $contenido = '<html>';
                 $contenido .= '<p>Nombre: ' . $respuestas['nombre'] . '</p>';
                 $contenido .= '<p>Email: ' . $respuestas['email'] . '</p>';
