@@ -49,18 +49,20 @@
             
                 $phpmailer = new PHPMailer();
                 $phpmailer->isSMTP();
+                $phpmailer->CharSet = 'UTF-8';
+                $phpmailer->SMTPDebug = 2;
                 $phpmailer->Host = $_ENV['EMAIL_HOST'];
                 $phpmailer->SMTPAuth = true;
+                $phpmailer->AuthType = 'LOGIN';
                 $phpmailer->Username = $_ENV['EMAIL_USER'];
                 $phpmailer->Password = $_ENV['EMAIL_PASS'];
-                $phpmailer->SMTPSecure = 'tls';
+                $phpmailer->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                 $phpmailer->Port = $_ENV['EMAIL_PORT'];
             
-                $phpmailer->setFrom('info@ignaciozanet.com.ar');
-                $phpmailer->addAddress('info@ignaciozanet.com.ar', 'IgnacioZanet.com.ar');
-                $phpmailer->Subject = 'Tenes un nuevo mensaje!';
+                $phpmailer->setFrom('info@izfotografias.com.ar');
+                $phpmailer->addAddress('info@izfotografias.com.ar');
+                $phpmailer->Subject = 'Tienes un nuevo mensaje!';
                 $phpmailer->isHTML(true);
-                $phpmailer->CharSet = 'UTF-8';
             
                 $contenido = '<html>';
                 $contenido .= '<p>Nombre: ' . $respuestas['nombre'] . '</p>';
@@ -74,11 +76,14 @@
             
                 $phpmailer->Body = $contenido;
                 $phpmailer->AltBody = 'Texto alternativo sin HTML';
+
+                echo PHPMailer::VERSION;
             
                 if ( $phpmailer->send() ) {
                   $mensaje = 'Mensaje enviado correctamente';
                 } else {
                   $mensaje = 'ERROR - El mensaje no se pudo enviar';
+                  echo $phpmailer->ErrorInfo;
                 }
             }
             $router->render('paginas/contacto', [

@@ -20,11 +20,11 @@
           </div> <!-- fin CAROUSSEL-->
         </div> <!-- Fin GALLERY -->
         <!-- OVERLAY -->
-        <div class="card-img-overlay hero-overlay">
+        <!-- <div class="card-img-overlay hero-overlay">
           <h1 class="card-title titulo"> Ignacio Zanet </h1>
           <h4 class="card-text titulo"> Fotografía Social </h4>
           <h5 class="card-text titulo"> Bodas - Quince años </h5>
-        </div>
+        </div> -->
       </div>  <!-- fin HERO-->
 
       <div class="iconos">

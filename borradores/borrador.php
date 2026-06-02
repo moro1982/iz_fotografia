@@ -232,3 +232,11 @@ case '/social_infantil':
   // }
 
 -->
+
+<!-- 
+WHAPP_NR=5493416644325
+EMAIL_HOST=sandbox.smtp.mailtrap.io
+EMAIL_PORT=2525
+EMAIL_USER=e6a5a425676146
+EMAIL_PASS=23eedb27e2a4fe
+-->
