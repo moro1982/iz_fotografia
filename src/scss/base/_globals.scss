@@ -2,8 +2,8 @@
 
 body {
     font-family: v.$fuente-primaria;
-    background-color: v.$beige2;
-    background: linear-gradient(v.$beige2, v.$beige3);
+    background-color: v.$blanco;
+    background: linear-gradient(v.$blanco, v.$beige1);
     min-height: 100vh;
 
     &.fijar-body {
@@ -33,7 +33,7 @@ a {
 }
 .titulo-fondo {
     padding-top: 1rem;
-    background: linear-gradient(v.$beige3, v.$beige2);
+    background: linear-gradient(v.$beige1, v.$blanco);
 }
 
 .enviar {

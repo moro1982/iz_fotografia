@@ -2,12 +2,12 @@
 @use '../base/mixins' as m;
 
 .navbar {
-    background-color: v.$beige2;
+    background-color: v.$beige1;
     padding: 0;
     // border-bottom: 1px solid v.$beige2;
     display: flex;
     align-items: center;
-    background: linear-gradient(v.$beige2, v.$beige3);
+    background: linear-gradient(v.$beige1, v.$blanco);
     .navbar-brand {
         padding: .75rem;
         img {
@@ -29,12 +29,12 @@
         padding: 0;
     }
     .dropdown-item {
-        background: linear-gradient(v.$beige1, v.$beige2);
+        background: linear-gradient(v.$blanco, v.$beige1);
         font-size: 1.10rem;
         text-align: center;
         width: auto;
         &:hover {
-            background: linear-gradient(v.$beige2, v.$beige3);
+            background: linear-gradient(v.$beige1, v.$beige2);
         }
     }
     .heading {
