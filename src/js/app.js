@@ -11,6 +11,7 @@ function iniciarApp(url) {
             carpetas = [{ruta : 'slider', cantidad : 5}];
             insertarCarousel(slider, carpetas[0], 'galeria01', 5);
             break;
+            
         case '/nosotros':
             resaltarActual('nosotros');
             break;
