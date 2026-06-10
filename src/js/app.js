@@ -8,8 +8,8 @@ function iniciarApp(url) {
         case '/':
             resaltarActual('inicio');
             const slider = document.querySelector('#galeria01');
-            carpetas = [{ruta : 'slider', cantidad : 5}];
-            insertarCarousel(slider, carpetas[0], 'galeria01', 5);
+            carpetas = [{ruta : 'slider', cantidad : 10}];
+            insertarCarousel(slider, carpetas[0], 'galeria01', 10);
             break;
             
         case '/nosotros':
